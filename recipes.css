@@ -3,24 +3,23 @@
 }
 
 h1 {
-  color: #173;
+  color: #182;
   font-size: 5em;
   text-align: center;
   font-family: Helvetica, sans-serif;
   margin-bottom: 300px;
-  text-shadow: 0 5px 5px black;
+  text-shadow: 0 10px 10px black;
 }
 
 .main-header {
-  background: linear-gradient(lightgray, transparent 50%),
-              linear-gradient(0deg,white, transparent 90%),
+  background: linear-gradient(0deg,white, transparent 90%),
               forestgreen url(Pictures/chicken.jpg) no-repeat center;
   background-size: cover;
   height: 600px;
   padding-top: 50px;
-  width: 80%;
-  border-top: lightblue solid 5px;
-  margin: 0 10%;
+  width: 100%;
+  border-top: #0a0 solid 5px;
+
 }
 
 .sub-title {
@@ -28,5 +27,5 @@ h1 {
   line-height: 1.5em;
   font-size: 1.5em;
   text-align: center;
-  color: #036;
+  color: #00a;
 }
