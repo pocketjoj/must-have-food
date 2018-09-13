@@ -7,7 +7,7 @@ h1 {
   font-size: 5em;
   text-align: center;
   font-family: Helvetica, sans-serif;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   text-shadow: 0 10px 10px black;
 }
 
@@ -15,7 +15,7 @@ h1 {
   background: linear-gradient(0deg,white, transparent 90%),
               forestgreen url(Pictures/chicken.jpg) no-repeat center;
   background-size: cover;
-  height: 600px;
+  height: 400px;
   padding-top: 50px;
   width: 100%;
   border-top: #0a0 solid 5px;
