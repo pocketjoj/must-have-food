@@ -13,7 +13,7 @@ h1 {
 
 .main-header {
   background: linear-gradient(0deg,white, transparent 90%),
-              forestgreen url(Pictures/chicken.jpg) no-repeat center;
+              forestgreen url(../Pictures/chicken.jpg) no-repeat center;
   background-size: cover;
   height: 400px;
   padding-top: 50px;
