@@ -1,11 +1,23 @@
 <!doctype html>
 <html>
-  <div>
-    <head>
-      <title>Recipes for Life</title>
-      <link rel="stylesheet" href="recipes.css">
-    </head>
-    <body>
+  <head>
+    <title>Recipes for Life</title>
+    <link rel="stylesheet" href="CSS/recipes.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+  </head>
+
+  <body>
+    <div class="nav-menu"> <!-- div for Nav links, displayed on ribbon at top -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Surprise!</a></li>
+        <li><a href="#">Find a Recipe</a></li>
+        <li><a href="planner.html">Meal Planner</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </div>
+
+    <div class="container"> <!-- Container for Header-->
       <header class="main-header">
         <h1>Our Recipes for Life</h1>
         <span class="sub-title">
@@ -16,6 +28,68 @@
           </p>
         </span>
       </header>
-    </body>
-  </div>
+    </div>
+
+    <section class="Welcome"> <!-- Brief site Intro-->
+      <h2>Welcome to my Online Cookbook!</h2>
+      <p>Bacon ipsum dolor amet cow pork brisket, drumstick flank tenderloin sirloin t-bone doner. Beef swine bacon fatback tongue prosciutto t-bone pork belly. Capicola venison pork belly pork short loin rump. Brisket tri-tip corned beef, flank pork belly pastrami salami pork chop jerky filet mignon kielbasa. Cow tongue frankfurter alcatra salami buffalo strip steak boudin pork sirloin pork loin short loin beef ribs.</p>
+    </section>
+
+    <div class="container"> <!-- Container for main content on page-->
+ <!-- Following three divs are three columns; main will appear in the center and left and right will be smaller side columns. -->
+
+      <div class="left col"> <!--Figuring out content for this column -->
+        <h3>Something here</h3>
+        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
+        </p>
+      </div>
+
+      <div class="main col"> <!-- Center column featuring three recipes of the week -->
+        <h2> Three treats this week!</h2>
+
+        <article>
+          <header>
+            <h3>Recipe 1</h3>
+            <p>From: Chef 1</p>
+          </header>
+          <p>Quick description of the recipe.</p>
+          <a href ="#">See Recipe</a>
+        </article>
+
+        <article>
+          <header>
+            <h3>Recipe 2</h3>
+            <p>From: Chef 2</p>
+          </header>
+          <p>Quick description of the recipe.</p>
+          <a href ="#">See Recipe</a>
+        </article>
+
+        <article>
+          <header>
+            <h3>Recipe 3</h3>
+            <p>From: Chef 3</p>
+          </header>
+          <p>Quick description of the recipe.</p>
+          <a href ="#">See Recipe</a>
+        </article>
+
+      </div>
+
+      <div class="right col"> <!--Column will feature three feedback buttons along right side. -->
+        <h3>I love feedback!</h3>
+        <div class="buttons">
+          <button>Submit a Recipe</button>
+          <button>Subscribe to My Newsletter</button>
+          <button>Contact Me</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
+  		<span>&copy;2018 Joel Benge.</span>
+  	</footer>
+
+  </body>
 </html>

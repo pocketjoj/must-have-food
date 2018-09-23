@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*--------------Layout Styles--------------*/
+
+.main-header {
+  background: linear-gradient(0deg,white, transparent 90%),
+              forestgreen url(../Pictures/chicken.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  padding-top: 0px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+/*--------------Navigation Bar--------------*/
+
+.nav-links,
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-menu {
+  background-color: #182;
+  background-image: repeating-linear-gradient(white, #182, #182, #182, white);
+  text-align: center;
+
+}
+
+.nav-links {
+  margin: 0;
+}
+
+.nav-links li {
+  font-size: 1.2em;
+  margin-right: 150px;
+  padding: 5px;
+  font-weight: 700;
+  font-family: Calibri, Helvetica, sans-serif
+}
+
+.nav-links a {
+  text-decoration:none;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  color: #00a;
+}
+
+/*s--------------Font Styles--------------*/
+.main-header h1 {
+  color: #182;
+  font-size: 6em;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 230px;
+  text-shadow: 0 10px 10px black;
+}
+
+.sub-title {
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
+  color: #00a;
+}
