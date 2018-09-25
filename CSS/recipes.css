@@ -16,6 +16,17 @@
   padding-top: 50px;
 }
 
+.main-footer {
+  background-color: lightgray;
+  font-style: oblique;
+  font-weight: 600;
+  text-align: center;
+}
+
+.welcome {
+  padding: 20px;
+}
+
 /*--------------Navigation Bar--------------*/
 
 .nav-links,
@@ -51,7 +62,7 @@
   color: #00a;
 }
 
-/*s--------------Font Styles--------------*/
+/*--------------Font Styles--------------*/
 .main-header h1 {
   color: #182;
   font-size: 6em;
@@ -68,4 +79,57 @@
   font-size: 1.5em;
   text-align: center;
   color: #00a;
+}
+
+.col h2 {
+  text-align: center;
+  font-size: 2em;
+
+}
+
+/*--------------Media Queries--------------*/
+
+@media (min-width: 1120px) {
+
+  .col {
+    float:left;
+  }
+
+  .middle {
+    width: 60%;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    width: 20%;
+    background-color: lightgray;
+    border: solid 3px #182;
+    border-radius: 5px;
+    height: 1000px;
+    padding: 20px;
+  }
+
+  .main-footer {
+    clear: both;
+    font-size: 1.25em;
+    height: 30px;
+  }
+
+  .buttons button {
+    display: block;
+    margin: 20px auto;
+    background-color: #18f;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: silver;
+  }
+
+}
+
+/*--------------Float Clearfix--------------*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
