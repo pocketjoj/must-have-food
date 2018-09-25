@@ -6,7 +6,7 @@
 /*--------------Layout Styles--------------*/
 
 .main-header {
-  background: linear-gradient(0deg,white, transparent 90%),
+  background: linear-gradient(0deg,white, transparent 100%),
               forestgreen url(../Pictures/chicken.jpg) no-repeat center;
   background-size: cover;
   height: 500px;
@@ -65,9 +65,9 @@
 /*--------------Font Styles--------------*/
 .main-header h1 {
   color: #182;
-  font-size: 6em;
+  font-size: 7em;
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: Allura, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 230px;
   text-shadow: 0 10px 10px black;
