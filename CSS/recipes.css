@@ -25,7 +25,8 @@
 
 .welcome {
   padding: 20px;
-}
+  border-bottom: 3px #f33 solid;
+  }
 
 /*--------------Navigation Bar--------------*/
 
@@ -38,7 +39,6 @@
   background-color: #182;
   background-image: repeating-linear-gradient(white, #182, #182, #182, white);
   text-align: center;
-
 }
 
 .nav-links {
@@ -64,13 +64,13 @@
 
 /*--------------Font Styles--------------*/
 .main-header h1 {
-  color: #182;
   font-size: 7em;
-  text-align: center;
-  font-family: Allura, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 230px;
   text-shadow: 0 10px 10px black;
+  color: #182;
+  text-align: center;
+  font-family: Allura, Helvetica, sans-serif;
 }
 
 .sub-title {
@@ -84,9 +84,14 @@
 .col h2 {
   text-align: center;
   font-size: 2em;
-
 }
 
+.welcome h2 {
+  text-align: center;
+  font-family: Allura, sans-serif;
+  font-size: 3em;
+  color: #182;
+}
 /*--------------Media Queries--------------*/
 
 @media (min-width: 1120px) {
@@ -96,15 +101,13 @@
   }
 
   .middle {
-    width: 60%;
+    width: 70%;
     text-align: center;
   }
 
   .left,
   .right {
-    width: 20%;
-    background-color: lightgray;
-    border: solid 3px #182;
+    width: 15%;
     border-radius: 5px;
     height: 1000px;
     padding: 20px;
@@ -122,9 +125,27 @@
     background-color: #18f;
     padding: 10px 12px;
     border-radius: 10px;
-    color: silver;
+    color: white;
+    font-weight: 600;
+    font-family: arial;
   }
 
+}
+
+/*--------------DRY Classes--------------*/
+
+.headers {
+  color: #182;
+  text-align: center;
+  font-family: Allura, Helvetica, sans-serif;
+  font-size: 3.5em;
+  background-color: #eee;
+  border-bottom: 3px #182 solid;
+  margin: 0;
+}
+
+.gray {
+  background-color: #eee;
 }
 
 /*--------------Float Clearfix--------------*/
