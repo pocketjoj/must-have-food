@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 
 /*--------------Layout Styles--------------*/
 
@@ -17,16 +22,35 @@
 }
 
 .main-footer {
-  background-color: lightgray;
+  background-color: #f11;
   font-style: oblique;
   font-weight: 600;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
 }
 
 .welcome {
   padding: 20px;
   border-bottom: 3px #f33 solid;
   }
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  display: block;
+  margin: 20px auto;
+  background-color: #18f;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: arial;
+}
 
 /*--------------Navigation Bar--------------*/
 
@@ -92,6 +116,7 @@
   font-size: 3em;
   color: #182;
 }
+
 /*--------------Media Queries--------------*/
 
 @media (min-width: 1120px) {
@@ -103,31 +128,22 @@
   .middle {
     width: 70%;
     text-align: center;
+    padding-top: 35px;
   }
 
   .left,
   .right {
     width: 15%;
     border-radius: 5px;
-    height: 1000px;
     padding: 20px;
+    height: 1191.09px;
+    overflow: scroll;
   }
 
   .main-footer {
     clear: both;
     font-size: 1.25em;
     height: 30px;
-  }
-
-  .buttons button {
-    display: block;
-    margin: 20px auto;
-    background-color: #18f;
-    padding: 10px 12px;
-    border-radius: 10px;
-    color: white;
-    font-weight: 600;
-    font-family: arial;
   }
 
 }
