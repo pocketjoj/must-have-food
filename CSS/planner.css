@@ -1,0 +1,38 @@
+/*--------------Meal Planner Form Styles--------------*/
+@media (min-width: 800px) {
+  .day {
+    display: inline-block;
+    width: 14%;
+  }
+}
+
+.day {
+  background: lightgray;
+  border: 2 px solid navy;
+  text-align: center;
+}
+
+.day h2 {
+  text-decoration: underline;
+  font-weight: 600;
+  font-family: verdana, sans-serif;
+}
+
+.bigbutton {
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.bigbutton button {
+  width: 16%;
+  height: 2em;
+  color: white;
+  background-color: #09f;
+  border: 3px solid #007;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 15px 10px;
+}
