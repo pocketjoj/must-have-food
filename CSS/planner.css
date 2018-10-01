@@ -1,14 +1,24 @@
 /*--------------Meal Planner Form Styles--------------*/
-@media (min-width: 800px) {
+@media (min-width: 769px) {
+
   .day {
     display: inline-block;
-    width: 14%;
+    width: 20%;
+    margin: 12px 4px;
+  }
+}
+@media (min-width: 1500px) {
+
+  .day {
+    display: inline-block;
+    width: 13%;
+    margin: 10px 4px;
   }
 }
 
-.day {
+.day fieldset{
   background: lightgray;
-  border: 2 px solid navy;
+  border: 4 px solid navy;
   text-align: center;
 }
 
@@ -18,6 +28,18 @@
   font-family: verdana, sans-serif;
 }
 
+.form {
+  text-align: center;
+}
+
+/*--------------Drop-Down Styles--------------*/
+
+select {
+  width: 60%;
+}
+
+/*--------------Button Styles--------------*/
+
 .bigbutton {
   margin: 20px auto;
   text-align: center;
@@ -25,8 +47,8 @@
 }
 
 .bigbutton button {
-  width: 16%;
-  height: 2em;
+  width: cover;
+  height: cover;
   color: white;
   background-color: #09f;
   border: 3px solid #007;

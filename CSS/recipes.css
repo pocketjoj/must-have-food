@@ -147,7 +147,10 @@ html {
     clear: both;
     font-size: 1.25em;
   }
+}
 
+@media (max-width: 769px) {
+  
 }
 
 /*--------------Footer Styles--------------*/
