@@ -1,19 +1,12 @@
+/*--------------Global Styles--------------*/
+
 * {
   box-sizing: border-box;
 }
 
-
-/*--------------Layout Styles--------------*/
-
-.main-header {
-  background: linear-gradient(0deg,white, transparent 90%),
-              forestgreen url(../Pictures/chicken.jpg) no-repeat center;
-  background-size: cover;
-  height: 500px;
-  padding-top: 0px;
-  width: 100%;
-  margin-top: 0;
-  padding-top: 50px;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 /*--------------Navigation Bar--------------*/
@@ -25,9 +18,8 @@
 
 .nav-menu {
   background-color: #182;
-  background-image: repeating-linear-gradient(white, #182, #182, #182, white);
+  background-image: linear-gradient(white, #182, #182, #182, white);
   text-align: center;
-
 }
 
 .nav-links {
@@ -51,15 +43,27 @@
   color: #00a;
 }
 
-/*s--------------Font Styles--------------*/
+/*--------------Header Styles--------------*/
+
+.main-header {
+  background: linear-gradient(0deg,white, transparent 100%),
+              forestgreen url(../Pictures/chicken.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  padding-top: 0px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 50px;
+}
+
 .main-header h1 {
-  color: #182;
-  font-size: 6em;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-size: 7em;
   margin-top: 0;
   margin-bottom: 230px;
   text-shadow: 0 10px 10px black;
+  color: #182;
+  text-align: center;
+  font-family: Allura, Helvetica, sans-serif;
 }
 
 .sub-title {
@@ -68,4 +72,110 @@
   font-size: 1.5em;
   text-align: center;
   color: #00a;
+}
+
+.welcome {
+  padding: 20px 250px;
+  border-bottom: 3px #f11 solid;
+  }
+
+  .headers {
+    color: #182;
+    text-align: center;
+    font-family: Allura, Helvetica, sans-serif;
+    font-size: 3.5em;
+    background-color: #eee;
+    border-bottom: 3px #182 solid;
+    margin: 0;
+  }
+
+/*--------------Main Page Styles--------------*/
+
+
+.col h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.welcome h2 {
+  text-align: center;
+  font-family: Allura, sans-serif;
+  font-size: 3em;
+  color: #182;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  display: block;
+  margin: 20px auto;
+  background-color: #09f;
+  padding: 10px 12px;
+  border: 3px solid #007;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: arial;
+}
+
+/*--------------Media Queries--------------*/
+
+@media (min-width: 1120px) {
+
+  .col {
+    float:left;
+  }
+
+  .middle {
+    width: 70%;
+    text-align: center;
+    padding-top: 35px;
+  }
+
+  .left,
+  .right {
+    width: 15%;
+    border-radius: 5px;
+    padding: 20px;
+    height: 1191.09px;
+    overflow: hidden;
+  }
+
+  .main-footer {
+    clear: both;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 769px) {
+  
+}
+
+/*--------------Footer Styles--------------*/
+
+.main-footer {
+  background-color: #f11;
+  background-image: linear-gradient(white, #f11, #f11, #f11, white);
+  font-style: oblique;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+
+/*--------------DRY Classes--------------*/
+
+.gray {
+  background-color: #eee;
+}
+
+/*--------------Float Clearfix--------------*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

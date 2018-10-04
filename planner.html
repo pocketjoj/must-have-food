@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
-
   <head>
-    <title>Meal Planning App</title>
+    <title>Recipes for Life</title>
     <link rel="stylesheet" href="CSS/recipes.css">
     <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/planner.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allura">
   </head>
 
 <!--Navigation Links, just like on main page. Will keep same nav bar throughout all pages on web site-->
@@ -12,45 +14,103 @@
     <div class="nav-menu"> <!-- div for Nav links, displayed on ribbon at top -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Surprise!</a></li>
-        <li><a href="#">Find a Recipe</a></li>
+        <li><a href="surprise.html">Surprise!</a></li>
+        <li><a href="recipe-database.html">Find a Recipe</a></li>
         <li><a href="planner.html">Meal Planner</a></li>
         <li><a href="about.html">About Me</a></li>
       </ul>
     </div>
 
-    <header class="page-header">
+    <header class="headers">
       <h1>Meal Planner</h1>
     </header>
 
 <!--The following containers will list each day of the week with a small html form that will allow recipe selection for each day. -->
-    <div class="day">
-      <h3>Sunday</h3>
-    </div>
+    <div class="form">
+      <form class="day">
+        <fieldset>
+          <h2>Sunday</h2>
+          <select id ="Sunday">
+            <option></option>
+            <option>Recipe 1</option>
+            <option>Recipe 2</option>
+            <option>Recipe 3</option>
+          </select>
+        </fieldset>
+      </form>
 
-    <div class="day">
-      <h3>Monday</h3>
-    </div>
+      <form class="day">
+        <fieldset>
+          <h2>Monday</h2>
+          <select id ="Monday">
+            <option></option>
+            <option>Recipe 1</option>
+            <option>Recipe 2</option>
+            <option>Recipe 3</option>
+          </select>
+        </fieldset>
+      </form>
 
-    <div class="day">
-      <h3>Tuesday</h3>
-    </div>
+      <form class="day">
+        <fieldset>
+          <h2>Tuesday</h2>
+          <select id ="Tuesday">
+            <option></option>
+            <option>Recipe 1</option>
+            <option>Recipe 2</option>
+            <option>Recipe 3</option>
+          </select>
+        </fieldset>
+      </form>
 
-    <div class="day">
-      <h3>Wednesday</h3>
-    </div>
+      <form class="day">
+        <fieldset>
+          <h2>Wednesday</h2>
+          <select id ="Wednesday">
+            <option></option>
+            <option>Recipe 1</option>
+            <option>Recipe 2</option>
+            <option>Recipe 3</option>
+          </select>
+        </fieldset>
+      </form>
 
-    <div class="day">
-      <h3>Thursday</h3>
-    </div>
+      <form class="day">
+        <fieldset>
+          <h2>Thursday</h2>
+          <select id ="Thursday">
+            <option></option>
+            <option>Recipe 1</option>
+            <option>Recipe 2</option>
+            <option>Recipe 3</option>
+          </select>
+        </fieldset>
+      </form>
 
-    <div class="day">
-      <h3>Friday</h3>
-    </div>
+        <form class="day">
+          <fieldset>
+            <h2>Friday</h2>
+            <select id ="Friday">
+              <option></option>
+              <option>Recipe 1</option>
+              <option>Recipe 2</option>
+              <option>Recipe 3</option>
+            </select>
+          </fieldset>
+        </form>
 
-    <div class="day">
-      <h3>Saturday</h3>
-    </div>
+        <form class="day">
+          <fieldset>
+            <h2>Saturday</h2>
+            <select id ="Saturday">
+              <option></option>
+              <option>Recipe 1</option>
+              <option>Recipe 2</option>
+              <option>Recipe 3</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
 
     <div class="bigbutton">
       <button>Print Your Shopping List</button>
@@ -61,7 +121,7 @@
     </div>
 
     <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
-      <span>&copy;2018 Joel Benge.</span>
+      <span>&copy;2018 Joel Benge</span>
     </footer>
 
   </body>
