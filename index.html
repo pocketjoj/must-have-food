@@ -82,14 +82,36 @@
         <h2>I love feedback!</h2>
         <div class="buttons">
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button>Submit a Recipe</button>
+          <button class="button-style">Submit a Recipe</button>
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button>Subscribe to My Newsletter</button>
+          <button class="button-style">Subscribe to My Newsletter</button>
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button>Contact Me</button>
+          <button class="button-style">Contact Me</button>
         </div>
       </div>
 
+    </div>
+
+    <div class="recipe-form">
+      <form>
+        <legend>Submit Your Recipe</legend>
+        <fieldset class="recipe">
+          <label for="title"> Title:
+            <textarea name="title" type="text" id="title"></textarea>
+          </label>
+          <label for="Ingredients"> Ingredients:
+            <textarea name="ingredients" type="text" id="ingredients" class="text-input"></textarea>
+          </label>
+          <label for="directions"> Directions:
+            <textarea name="directions" type="text" id="directions" class="text-input"></textarea>
+          </label>
+          <label for="comments"> Comments:
+            <textarea name="comments" type="text" id="comments" class="text-input"></textarea>
+          </label>
+          <input type="submit" value="Submit Recipe" class="button-style">
+
+        </fieldset>
+      </form>
     </div>
 
     <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
