@@ -75,7 +75,7 @@ html {
 .main-header h1 {
   font-size: 7em;
   margin-top: 0;
-  margin-bottom: 230px;
+  margin-bottom: 220px;
   text-shadow: 0 10px 10px black;
   color: #182;
   text-align: center;
@@ -90,9 +90,10 @@ html {
   color: #00a;
 }
 
-.welcome {
-  padding: 20px 250px;
-  border-bottom: 3px #f11 solid;
+.welcome h2 {
+  border-top: 3px #00a solid;
+  font-size: 1.5em;
+  padding-top: 10px;
   }
 
   .headers {
@@ -128,6 +129,10 @@ html {
 
 @media (min-width: 1120px) {
 
+  .welcome h2 {
+    margin-bottom: -65px;
+  }
+
   .col {
     float:left;
   }
@@ -136,6 +141,7 @@ html {
     width: 70%;
     text-align: center;
     padding-top: 35px;
+    margin-top: 50px;
   }
 
   .left,
@@ -166,6 +172,7 @@ html {
 
 /*------------Pop-up Form Styles-------------*/
 .recipe-form {
+  visibility: hidden;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -173,7 +180,6 @@ html {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
   background-color: gray;
 }
 
@@ -197,12 +203,13 @@ html {
 
 .recipe label {
   display: block;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 190px;
   margin-left: 5%;
   font-weight: 600;
   font-size: 1.25em;
   overflow: auto;
+  font-family: arial, sans-serif;
 }
 
 .recipe label[for="title"] {
@@ -212,7 +219,7 @@ html {
 .recipe textarea {
   position: absolute;
   left: 20%;
-  width: 60%;
+  width: 65%;
 }
 
 .text-input {
@@ -231,6 +238,27 @@ html {
   font-weight: bold;
 }
 
+@media (max-width: 1700px) {
+  .recipe {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .recipe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .recipe {
+    width: 100%;
+  }
+  .recipe textarea {
+    left: 30%;
+    width: 60%;
+  }
+}
 
 /*--------------DRY Classes--------------*/
 
