@@ -180,16 +180,18 @@ html {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 150px;
 }
 
 .recipe-form legend {
   text-align: center;
   font-size: 3em;
-  color: #00a;
+  color: white;
   font-weight: bold;
   font-family: Allura, sans-serif;
   padding-top: 50px;
+  text-shadow: 3px 3px #00a;
 }
 
 .recipe {
