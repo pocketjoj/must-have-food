@@ -278,6 +278,15 @@ html {
   color: white;
   font-weight: 600;
   font-family: arial;
+  box-shadow: 0 9px #999;
+}
+
+.button-style:hover {background-color: #05b}
+
+.button-style:active {
+  background-color: #05b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /*--------------Float Clearfix--------------*/
