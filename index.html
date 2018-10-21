@@ -34,7 +34,6 @@
 
     <div class="container welcome"> <!-- Brief site Intro-->
       <h2>Welcome to my Online Cookbook!</h2>
-      <p>Bacon ipsum dolor amet cow pork brisket, drumstick flank tenderloin sirloin t-bone doner. Beef swine bacon fatback tongue prosciutto t-bone pork belly. Capicola venison pork belly pork short loin rump. Brisket tri-tip corned beef, flank pork belly pastrami salami pork chop jerky filet mignon kielbasa. Cow tongue frankfurter alcatra salami buffalo strip steak boudin pork sirloin pork loin short loin beef ribs.</p>
     </div>
 
     <div class="container"> <!-- Container for main content on page-->
@@ -82,19 +81,60 @@
         <h2>I love feedback!</h2>
         <div class="buttons">
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button>Submit a Recipe</button>
+          <button class="button-style submit-info">Submit a Recipe</button>
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button>Subscribe to My Newsletter</button>
+          <button class="button-style">
+            <a href="#" target="_blank">Subscribe to My Newsletter</a>
+          </button>
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button>Contact Me</button>
+          <button class="button-style submit-info">Contact Me</button>
         </div>
       </div>
 
     </div>
 
+    <div class="popup" id="popup1">
+      <form>
+        <legend>Submit Your Recipe</legend>
+        <fieldset class="popup-form recipe">
+          <label for="title"> Title:
+            <textarea name="title" type="text" id="title"></textarea>
+          </label>
+          <label for="Ingredients" class="recipe-text"> Ingredients:
+            <textarea name="ingredients" type="text" id="ingredients" class="text-input"></textarea>
+          </label>
+          <label for="directions" class="recipe-text"> Directions:
+            <textarea name="directions" type="text" id="directions" class="text-input"></textarea>
+          </label>
+          <label for="comments" class="recipe-text"> Comments:
+            <textarea name="comments" type="text" id="comments" class="text-input"></textarea>
+          </label>
+          <input type="submit" value="Submit Recipe" class="button-style" id="recipe-submit">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="popup" id="popup2">
+      <form>
+        <legend>Contact Me</legend>
+        <fieldset class="popup-form contact">
+          <label for="name"> Name:
+            <textarea name="name" type="text" id="name"></textarea>
+          </label>
+          <label for="Email"> Email:
+            <textarea name="email" type="email" id="email"></textarea>
+          </label>
+          <label for="message"> Message:
+            <textarea name="Message" type="text" id="comments" class="text-input"></textarea>
+          </label>
+          <input type="submit" value="Submit Contact" class="button-style" id="contact-submit">
+        </fieldset>
+      </form>
+    </div>
+
     <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
   		<span>&copy;2018 Joel Benge</span>
   	</footer>
-
+  <script src="JavaScript/popup.js"></script>
   </body>
 </html>
