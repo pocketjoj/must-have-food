@@ -91,7 +91,7 @@ html {
 }
 
 .welcome h2 {
-  border-top: 3px #00a solid;
+  border-top: 3px #f11 solid;
   font-size: 1.5em;
   padding-top: 10px;
   }
@@ -123,6 +123,11 @@ html {
 
 .buttons {
   text-align: center;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*--------------Desktop Column Layouts--------------*/
@@ -171,7 +176,7 @@ html {
 }
 
 /*------------Pop-up Form Styles-------------*/
-.recipe-form {
+.popup {
   visibility: hidden;
   width: 100%;
   height: 100%;
@@ -181,21 +186,36 @@ html {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  padding-top: 150px;
 }
 
-.recipe-form legend {
+#popup1 {
+  padding-top: 200px;
+}
+
+#popup2 {
+  padding-top: 850px;
+}
+
+.popup legend {
   text-align: center;
   font-size: 3em;
   color: white;
+  padding: 20px;
   font-weight: bold;
   font-family: Allura, sans-serif;
-  padding-top: 50px;
   text-shadow: 3px 3px #00a;
 }
 
+
 .recipe {
   height: 800px;
+}
+
+.contact {
+  height: 500px;
+}
+
+.popup-form {
   width: 50%;
   margin: auto;
   border: 5px #182 solid;
@@ -203,22 +223,22 @@ html {
   background-color: lightgray;
 }
 
-.recipe label {
+.popup .recipe-text {
+  margin-bottom: 190px;
+}
+
+.popup label {
   display: block;
   margin-top: 15px;
-  margin-bottom: 190px;
   margin-left: 5%;
+  margin-bottom: 42px;
   font-weight: 600;
   font-size: 1.25em;
   overflow: auto;
   font-family: arial, sans-serif;
 }
 
-.recipe label[for="title"] {
-  margin-bottom: 42px;
-}
-
-.recipe textarea {
+.popup-form textarea {
   position: absolute;
   left: 20%;
   width: 65%;
@@ -241,22 +261,22 @@ html {
 }
 
 @media (max-width: 1700px) {
-  .recipe {
+  .popup {
     width: 70%;
   }
 }
 
 @media (max-width: 1250px) {
-  .recipe {
+  .popup {
     width: 100%;
   }
 }
 
 @media (max-width: 900px) {
-  .recipe {
+  .popup {
     width: 100%;
   }
-  .recipe textarea {
+  .popup textarea {
     left: 30%;
     width: 60%;
   }

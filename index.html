@@ -81,34 +81,53 @@
         <h2>I love feedback!</h2>
         <div class="buttons">
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button class="button-style submit-recipe">Submit a Recipe</button>
+          <button class="button-style submit-info">Submit a Recipe</button>
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button class="button-style">Subscribe to My Newsletter</button>
+          <button class="button-style">
+            <a href="#" target="_blank">Subscribe to My Newsletter</a>
+          </button>
           <img src="Pictures/placeholder1.png" alt="I Love Feedback">
-          <button class="button-style">Contact Me</button>
+          <button class="button-style submit-info">Contact Me</button>
         </div>
       </div>
 
     </div>
 
-    <div class="recipe-form">
+    <div class="popup" id="popup1">
       <form>
         <legend>Submit Your Recipe</legend>
-        <fieldset class="recipe">
+        <fieldset class="popup-form recipe">
           <label for="title"> Title:
             <textarea name="title" type="text" id="title"></textarea>
           </label>
-          <label for="Ingredients"> Ingredients:
+          <label for="Ingredients" class="recipe-text"> Ingredients:
             <textarea name="ingredients" type="text" id="ingredients" class="text-input"></textarea>
           </label>
-          <label for="directions"> Directions:
+          <label for="directions" class="recipe-text"> Directions:
             <textarea name="directions" type="text" id="directions" class="text-input"></textarea>
           </label>
-          <label for="comments"> Comments:
+          <label for="comments" class="recipe-text"> Comments:
             <textarea name="comments" type="text" id="comments" class="text-input"></textarea>
           </label>
-          <input type="submit" value="Submit Recipe" class="button-style" id="final-submit">
+          <input type="submit" value="Submit Recipe" class="button-style" id="recipe-submit">
+        </fieldset>
+      </form>
+    </div>
 
+    <div class="popup" id="popup2">
+      <form>
+        <legend>Contact Me</legend>
+        <fieldset class="popup-form contact">
+          <label for="name"> Name:
+            <textarea name="name" type="text" id="name"></textarea>
+          </label>
+          <label for="Email"> Email:
+            <textarea name="email" type="email" id="email"></textarea>
+          </label>
+          <label for="message"> Message:
+            <textarea name="Message" type="text" id="comments" class="text-input"></textarea>
+          </label>
+          <input type="submit" value="Submit Contact" class="button-style" id="contact-submit">
         </fieldset>
       </form>
     </div>
