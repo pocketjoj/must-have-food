@@ -130,6 +130,9 @@ html {
   color: inherit;
 }
 
+.side-img {
+  border-radius: 50%;
+}
 /*--------------Desktop Column Layouts--------------*/
 
 @media (min-width: 1120px) {
@@ -154,7 +157,7 @@ html {
     width: 15%;
     border-radius: 5px;
     padding: 20px;
-    height: 1191.09px;
+    height: 1100px;
     overflow: hidden;
   }
 }
