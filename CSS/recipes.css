@@ -113,20 +113,33 @@ body {
 
 /*--------------Main Page Styles--------------*/
 
-.flexbox {
+.main-content {
   border-top: solid 3px #f11;
 }
 
 .col {
-  padding: 20px 8px;
+  padding: 20px 8px 15px 20px;
 }
 
 .col h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.75em;
   margin: 0 auto;
   font-family: Calibri, sans-serif;
   color: #00a;
+}
+
+.col h3 {
+  font-size: 1.3em;
+  color: #f11;
+  font-family: Allura, sans-serif;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.left {
+  font-family: Calibri, sans-serif;
+  font-size: 1.25em;
 }
 
 .welcome {
@@ -152,7 +165,7 @@ body {
 
 @media (min-width: 1120px) {
 
-  .flexbox {
+  .main-content {
     display: flex;
     justify-content: center;
   }
@@ -308,4 +321,8 @@ body {
   background-color: #05b;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.chef {
+  font-style: italic;
 }

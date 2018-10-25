@@ -5,7 +5,7 @@ const recipeSubmit = document.getElementById("recipe-submit");
 const contactMe = document.getElementById("contact-submit")
 const popup = document.getElementsByClassName("popup");
 
-//Listeners for "Submit a Recipe" and "Contant Me" Buttons
+//Listeners for "Submit a Recipe" and "Contact Me" Buttons
 submitInfo[0].addEventListener('click', function(){
   if (popup[1].style.visibility != "visible") {
   popup[0].style.visibility = "visible";
