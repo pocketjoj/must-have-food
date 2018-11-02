@@ -107,7 +107,7 @@ body {
 }
 
 /*--------------Nav Bar on Larger Screens--------------*/
-@media (min-width: 750px) {
+@media only screen (min-width: 850px) {
   #hamburger {
     visibility: collapse;
   }
@@ -131,7 +131,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen (min-width: 1200px) {
   .nav-menu {
     padding: 0 10%;
   }
@@ -179,20 +179,20 @@ body {
     margin: 0;
   }
 
-  @media (min-width: 580px){
-    .main-header h1 {
-      font-size: 5em;
-    }
+@media only screen (min-width: 580px){
+  .main-header h1 {
+    font-size: 5em;
+  }
     .sub-title {
       font-size: 1.5em;
     }
   }
 
-  @media (min-width: 790px){
-    .main-header h1 {
-      font-size: 7em;
-    }
+@media only screen (min-width: 790px){
+  .main-header h1 {
+    font-size: 7em;
   }
+}
 
 /*--------------Main Page Styles--------------*/
 
@@ -247,7 +247,7 @@ body {
 }
 /*--------------Desktop Column Layouts--------------*/
 
-@media (min-width: 850px) {
+@media only screen (min-width: 850px) {
 
   .main-content {
     display: flex;
@@ -269,7 +269,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen (min-width: 1200px) {
   .middle {
     flex-grow: 3.5;
   }
@@ -369,19 +369,19 @@ body {
   height: 200px;
 }
 
-@media (max-width: 1700px) {
+@media only screen (max-width: 1700px) {
   .popup {
     width: 70%;
   }
 }
 
-@media (max-width: 1250px) {
+@media only screen (max-width: 1250px) {
   .popup {
     width: 100%;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen (max-width: 900px) {
   .popup {
     width: 100%;
   }
