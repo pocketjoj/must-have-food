@@ -9,55 +9,134 @@ html {
   min-height: 100%;
 }
 
+/*---------Style for Sticker Footer---------*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/*--------------DRY Classes--------------*/
+
+.gray {
+  background-color: #eee;
+}
+
+.button-style {
+  display: block;
+  margin: 20px auto;
+  background-color: #09f;
+  padding: 10px 12px;
+  border: 3px solid #007;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: arial;
+  box-shadow: 0 9px #999;
+}
+
+.button-style:hover {background-color: #05b}
+
+.button-style:active {
+  background-color: #05b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.chef {
+  font-style: italic;
+}
+
+
 /*--------------Navigation Bar--------------*/
 
-.nav-links,
-.nav-links li {
-  display: inline-block;
+#hamburger {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+#hamburger:hover {
+  border: 2px solid white;
+}
+
+#hamburger:active {
+  background-color: #05b;
+  transform: translateY(4px);
 }
 
 .nav-menu {
   background-color: #182;
   background-image: linear-gradient(white, #182, #182, #182, white);
+  position: relative;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.nav-menu a {
+  font-size: 1.8em;
+  padding: 5px;
+  font-weight: 700;
+  font-family: Calibri, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  visibility: collapse;
+  background-color: #182;
+  width: 100%;
+  border-top: 2px solid white;
   text-align: center;
 }
 
-.nav-links {
-  margin: 0;
+.nav-menu a:last-child {
+  border-bottom: 2px solid white;
 }
 
-.nav-links li {
-  font-size: 1.2em;
-  margin-right: 150px;
-  padding: 5px;
-  font-weight: 700;
-  font-family: Calibri, Helvetica, sans-serif
-}
-
-.nav-links a {
-  text-decoration:none;
-  color: #fff;
-}
-
-.nav-links a:hover {
+.nav-menu a:hover {
   color: #00a;
 }
 
-/*--------------Mobile/Smaller Viewport Nav Bars--------------*/
-@media (max-width: 1500px) {
-  .nav-links li {
-    margin-right: 110px;
+/*--------------Nav Bar on Larger Screens--------------*/
+@media (min-width: 600px) {
+  #hamburger {
+    visibility: collapse;
   }
 
-  @media (max-width: 1120px) {
-    .nav-links li {
-      margin-right: 50px;
-    }
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-}@media (max-width: 769px) {
+  .nav-menu a {
+    visibility: visible;
+    font-size: 1.2em;
+    width: auto;
+    border: none;
+    background: none;
 
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
 }
+
+@media (min-width: 1200px) {
+  .nav-menu {
+    padding: 0 10%;
+  }
+}
+
 
 /*--------------Header Styles--------------*/
 
@@ -73,7 +152,7 @@ html {
 }
 
 .main-header h1 {
-  font-size: 7em;
+  font-size: 3.5em;
   margin-top: 0;
   margin-bottom: 220px;
   text-shadow: 0 10px 10px black;
@@ -85,16 +164,10 @@ html {
 .sub-title {
   font-weight: bold;
   line-height: 1.5em;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   color: #00a;
 }
-
-.welcome h2 {
-  border-top: 3px #f11 solid;
-  font-size: 1.5em;
-  padding-top: 10px;
-  }
 
   .headers {
     color: #182;
@@ -106,18 +179,57 @@ html {
     margin: 0;
   }
 
+  @media (min-width: 580px){
+    .main-header h1 {
+      font-size: 5em;
+    }
+    .sub-title {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (min-width: 790px){
+    .main-header h1 {
+      font-size: 7em;
+    }
+  }
+
 /*--------------Main Page Styles--------------*/
 
+.main-content {
+  border-top: solid 3px #f11;
+}
+
+.col {
+  padding: 20px;
+}
 
 .col h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.75em;
+  margin: 0 auto;
+  font-family: Calibri, sans-serif;
+  color: #00a;
 }
 
-.welcome h2 {
+.col h3 {
+  font-size: 1.3em;
+  color: #f11;
+  font-family: Allura, sans-serif;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.left {
+  font-family: Calibri, sans-serif;
+  font-size: 1.25em;
+  background-color: #eee;
+}
+
+.welcome {
   text-align: center;
   font-family: Allura, sans-serif;
-  font-size: 3em;
+  font-size: 3.5em;
   color: #182;
 }
 
@@ -130,32 +242,40 @@ html {
   color: inherit;
 }
 
+.side-img {
+  border-radius: 50%;
+}
 /*--------------Desktop Column Layouts--------------*/
 
-@media (min-width: 1120px) {
+@media (min-width: 850px) {
 
-  .welcome h2 {
-    margin-bottom: -65px;
+  .main-content {
+    display: flex;
+    justify-content: center;
   }
 
   .col {
-    float:left;
+    flex: 1 1 0;
   }
 
   .middle {
-    width: 70%;
-    text-align: center;
-    padding-top: 35px;
-    margin-top: 50px;
+    flex-grow: 2;
+    order: 1;
   }
 
-  .left,
   .right {
-    width: 15%;
-    border-radius: 5px;
-    padding: 20px;
-    height: 1191.09px;
-    overflow: hidden;
+    order: 2;
+    background-color: #eee;
+  }
+}
+
+@media (min-width: 1200px) {
+  .middle {
+    flex-grow: 3.5;
+  }
+
+  .left {
+    padding: 20px 30px;
   }
 }
 
@@ -167,11 +287,8 @@ html {
   font-style: oblique;
   font-weight: 600;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 30px;
-  clear: both;
   font-size: 1.25em;
 }
 
@@ -215,6 +332,10 @@ html {
   height: 500px;
 }
 
+.contact input[type="submit"] {
+  margin-top: 215px;
+}
+
 .popup-form {
   width: 50%;
   margin: auto;
@@ -246,18 +367,6 @@ html {
 
 .text-input {
   height: 200px;
-
-}
-
-.submit {
-  display: block;
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  margin-left: -75px;
-  width: 150px;
-  height: 40px;
-  font-weight: bold;
 }
 
 @media (max-width: 1700px) {
@@ -280,38 +389,4 @@ html {
     left: 30%;
     width: 60%;
   }
-}
-
-/*--------------DRY Classes--------------*/
-
-.gray {
-  background-color: #eee;
-}
-
-.button-style {
-  display: block;
-  margin: 20px auto;
-  background-color: #09f;
-  padding: 10px 12px;
-  border: 3px solid #007;
-  border-radius: 10px;
-  color: white;
-  font-weight: 600;
-  font-family: arial;
-  box-shadow: 0 9px #999;
-}
-
-.button-style:hover {background-color: #05b}
-
-.button-style:active {
-  background-color: #05b;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/*--------------Float Clearfix--------------*/
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
 }

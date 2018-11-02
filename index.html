@@ -1,22 +1,22 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Recipes for Life</title>
-    <link rel="stylesheet" href="CSS/recipes.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Allura">
-  </head>
+<head>
+  <title>Recipes for Life</title>
+  <link rel="stylesheet" href="CSS/recipes.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Allura">
+</head>
 
-  <body>
+<body>
+  <div class="content"> <!--Div Container for sticky footer to work.-->
     <div class="nav-menu"> <!-- div for Nav links, displayed on ribbon at top -->
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="surprise.html">Surprise!</a></li>
-        <li><a href="recipe-database.html">Find a Recipe</a></li>
-        <li><a href="planner.html">Meal Planner</a></li>
-        <li><a href="about.html">About Me</a></li>
-      </ul>
+      <img src="Pictures/hamburger.png" alt="Navigation Menu" id="hamburger">
+      <a href="index.html">Home</a>
+      <a href="surprise.html">Surprise!</a>
+      <a href="recipe-database.html">Find a Recipe</a>
+      <a href="planner.html">Meal Planner</a>
+      <a href="about.html">About Me</a>
     </div>
 
     <div class="container gray"> <!-- Container for Header-->
@@ -32,61 +32,60 @@
       </header>
     </div>
 
-    <div class="container welcome"> <!-- Brief site Intro-->
-      <h2>Welcome to my Online Cookbook!</h2>
-    </div>
-
-    <div class="container"> <!-- Container for main content on page-->
+    <div class="main-content"> <!-- Container for main content on page-->
  <!-- Following three divs are three columns; main will appear in the center and left and right will be smaller side columns. -->
 
-      <div class="left col clearfix gray"> <!--Figuring out content for this column -->
-        <h2>Something here</h2>
+      <div class="middle col"> <!-- Center column featuring three recipes of the week -->
+
+        <h1 class="welcome">Welcome to My Online Cookbook!</h1>
+
         <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
         </p>
-      </div>
-
-      <div class="middle col clearfix"> <!-- Center column featuring three recipes of the week -->
-        <h1> Three treats this week!</h1>
-
-        <article>
-          <header>
-            <h3>Recipe 1</h3>
-            <p>From: Chef 1</p>
-          </header>
-          <p>Quick description of the recipe.</p>
-          <a href ="#">See Recipe</a>
-        </article>
-
-        <article>
-          <header>
-            <h3>Recipe 2</h3>
-            <p>From: Chef 2</p>
-          </header>
-          <p>Quick description of the recipe.</p>
-          <a href ="#">See Recipe</a>
-        </article>
-
-        <article>
-          <header>
-            <h3>Recipe 3</h3>
-            <p>From: Chef 3</p>
-          </header>
-          <p>Quick description of the recipe.</p>
-          <a href ="#">See Recipe</a>
-        </article>
 
       </div>
 
-      <div class="right col clearfix gray"> <!--Column will feature three feedback buttons along right side. -->
-        <h2>I love feedback!</h2>
+      <div class="left col"> <!--Figuring out content for this column -->
+
+        <h2>This Week's Treats!</h2>
+
+        <article>
+          <header>
+            <h3>Slow Cooker Red Beans and Rice</h3>
+            <p class="chef">From: Lisa, the <a href="https://www.creolecontessa.com/" target="_blank">Creole Contessa</a></p>
+          </header>
+          <p>Looking for a meal you can throw together that will just taste better with time? Try this version of Red Beans and Rice, originally published in Louisiana Kitchen and Culture magazine. This has become a monthly (at least!) staple in my house, and we love it every time!</p>
+          <a href ="Recipes/redbeans.pdf" target="_blank">See Recipe</a>
+        </article>
+
+        <article>
+          <header>
+            <h3>Garlic Butter Rice with Kale</h3>
+            <p class="chef">From: Nagi, of <a href="https://www.recipetineats.com/" target="_blank">RecipeTin Eats</a></p>
+          </header>
+          <p>This rice may not seem like much, but it is a delicious accompaniment to nearly any entree. I love it with the kale and almonds, but the garlic and buttery richness will win you over either way.</p>
+          <a href ="https://www.recipetineats.com/garlic-butter-rice-with-kale-recipe/" target="_blank">See Recipe</a>
+        </article>
+
+        <article>
+          <header>
+            <h3>Campfire Paella</h3>
+            <p class="chef">From: Christie Vanover at <a href="http://www.zestuous.com" target="_blank">Zestuous</a>
+            </p>
+          </header>
+          <p>I made a meal for four starring this very easy (and tasty) paella. It was incredible how easy it was to make campfire dinner gourmet with just the ingredients, foil and a campfire!</p>
+          <a href ="http://www.zestuous.com/campfire-paella/" target="_blank">See Recipe</a>
+        </article>
+      </div>
+
+      <div class="right col"> <!--Column will feature three feedback buttons along right side. -->
         <div class="buttons">
-          <img src="Pictures/placeholder1.png" alt="I Love Feedback">
+          <img src="Pictures/2-eggs.jpg" alt="Submit a Recipe" class="side-img">
           <button class="button-style submit-info">Submit a Recipe</button>
-          <img src="Pictures/placeholder1.png" alt="I Love Feedback">
+          <img src="Pictures/sandwich.jpg" alt="Subscribe to My Newsletter" class="side-img">
           <button class="button-style">
             <a href="#" target="_blank">Subscribe to My Newsletter</a>
           </button>
-          <img src="Pictures/placeholder1.png" alt="I Love Feedback">
+          <img src="Pictures/pasta.jpg" alt="Contact Me" class="side-img">
           <button class="button-style submit-info">Contact Me</button>
         </div>
       </div>
@@ -127,14 +126,16 @@
           <label for="message"> Message:
             <textarea name="Message" type="text" id="comments" class="text-input"></textarea>
           </label>
-          <input type="submit" value="Submit Contact" class="button-style" id="contact-submit">
+          <input type="submit" value="Send Message" class="button-style" id="contact-submit">
         </fieldset>
       </form>
     </div>
+  </div>
 
-    <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
-  		<span>&copy;2018 Joel Benge</span>
-  	</footer>
+  <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
+		<span>&copy;2018 Joel Benge</span>
+	</footer>
   <script src="JavaScript/popup.js"></script>
-  </body>
+  <script src="Javascript/navBar.js"></script>
+</body>
 </html>

@@ -1,24 +1,25 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Recipes for Life</title>
-    <link rel="stylesheet" href="CSS/recipes.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/planner.css">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Allura">
-  </head>
+<head>
+  <title>Recipes for Life</title>
+  <link rel="stylesheet" href="CSS/recipes.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/planner.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Allura">
+</head>
 
 <!--Navigation Links, just like on main page. Will keep same nav bar throughout all pages on web site-->
-  <body>
+<body>
+  <div class="content"> <!--Div Container for sticky footer to work.-->
     <div class="nav-menu"> <!-- div for Nav links, displayed on ribbon at top -->
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="surprise.html">Surprise!</a></li>
-        <li><a href="recipe-database.html">Find a Recipe</a></li>
-        <li><a href="planner.html">Meal Planner</a></li>
-        <li><a href="about.html">About Me</a></li>
-      </ul>
+      <img src="Pictures/hamburger.png" alt="Navigation Menu" id="hamburger">
+      <a href="index.html">Home</a>
+      <a href="surprise.html">Surprise!</a>
+      <a href="recipe-database.html">Find a Recipe</a>
+      <a href="planner.html">Meal Planner</a>
+      <a href="about.html">About Me</a>
+    </div>
     </div>
 
     <header class="headers">
@@ -119,10 +120,11 @@
 <!--After pressing the button above with recipes selected for each day, a shopping list will be printed below.-->
     <div class="shoppinglist">
     </div>
+  </div>
 
-    <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
-      <span>&copy;2018 Joel Benge</span>
-    </footer>
-
+  <footer class="main-footer"> <!-- Sticky footer at bottom of page -->
+    <span>&copy;2018 Joel Benge</span>
+  </footer>
+  <script src="Javascript/navBar.js"></script>
   </body>
 </html>
