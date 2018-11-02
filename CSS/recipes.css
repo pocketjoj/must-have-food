@@ -20,6 +20,38 @@ body {
   flex: 1;
 }
 
+/*--------------DRY Classes--------------*/
+
+.gray {
+  background-color: #eee;
+}
+
+.button-style {
+  display: block;
+  margin: 20px auto;
+  background-color: #09f;
+  padding: 10px 12px;
+  border: 3px solid #007;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: arial;
+  box-shadow: 0 9px #999;
+}
+
+.button-style:hover {background-color: #05b}
+
+.button-style:active {
+  background-color: #05b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.chef {
+  font-style: italic;
+}
+
+
 /*--------------Navigation Bar--------------*/
 
 #hamburger {
@@ -75,20 +107,36 @@ body {
 }
 
 /*--------------Nav Bar on Larger Screens--------------*/
-@media (max-width: 1500px) {
-  .nav-links li {
-    margin-right: 110px;
+@media (min-width: 600px) {
+  #hamburger {
+    visibility: collapse;
   }
 
-  @media (max-width: 1120px) {
-    .nav-links li {
-      margin-right: 50px;
-    }
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-}@media (max-width: 769px) {
+  .nav-menu a {
+    visibility: visible;
+    font-size: 1.2em;
+    width: auto;
+    border: none;
+    background: none;
 
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
 }
+
+@media (min-width: 1200px) {
+  .nav-menu {
+    padding: 0 10%;
+  }
+}
+
 
 /*--------------Header Styles--------------*/
 
@@ -153,7 +201,7 @@ body {
 }
 
 .col {
-  padding: 20px 8px 15px 20px;
+  padding: 20px;
 }
 
 .col h2 {
@@ -175,6 +223,7 @@ body {
 .left {
   font-family: Calibri, sans-serif;
   font-size: 1.25em;
+  background-color: #eee;
 }
 
 .welcome {
@@ -198,7 +247,7 @@ body {
 }
 /*--------------Desktop Column Layouts--------------*/
 
-@media (min-width: 1120px) {
+@media (min-width: 850px) {
 
   .main-content {
     display: flex;
@@ -210,12 +259,23 @@ body {
   }
 
   .middle {
-    flex-grow: 4;
+    flex-grow: 2;
     order: 1;
   }
 
   .right {
     order: 2;
+    background-color: #eee;
+  }
+}
+
+@media (min-width: 1200px) {
+  .middle {
+    flex-grow: 3.5;
+  }
+
+  .left {
+    padding: 20px 30px;
   }
 }
 
@@ -329,35 +389,4 @@ body {
     left: 30%;
     width: 60%;
   }
-}
-
-/*--------------DRY Classes--------------*/
-
-.gray {
-  background-color: #eee;
-}
-
-.button-style {
-  display: block;
-  margin: 20px auto;
-  background-color: #09f;
-  padding: 10px 12px;
-  border: 3px solid #007;
-  border-radius: 10px;
-  color: white;
-  font-weight: 600;
-  font-family: arial;
-  box-shadow: 0 9px #999;
-}
-
-.button-style:hover {background-color: #05b}
-
-.button-style:active {
-  background-color: #05b;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.chef {
-  font-style: italic;
 }
