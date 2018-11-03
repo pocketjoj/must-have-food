@@ -148,13 +148,16 @@ body {
   padding-top: 0px;
   width: 100%;
   margin-top: 0;
-  padding-top: 50px;
+  padding-top: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-header h1 {
   font-size: 4em;
   margin-top: 0;
-  margin-bottom: 220px;
   text-shadow: 0 10px 10px black;
   color: #182;
   text-align: center;
@@ -169,15 +172,19 @@ body {
   color: #00a;
 }
 
-  .headers {
-    color: #182;
-    text-align: center;
-    font-family: Allura, Helvetica, sans-serif;
-    font-size: 3.5em;
-    background-color: #eee;
-    border-bottom: 3px #182 solid;
-    margin: 0;
-  }
+.sub-title p {
+  margin: 10px auto;
+}
+
+.headers {
+  color: #182;
+  text-align: center;
+  font-family: Allura, Helvetica, sans-serif;
+  font-size: 3.5em;
+  background-color: #eee;
+  border-bottom: 3px #182 solid;
+  margin: 0;
+}
 
 @media (min-width: 580px){
   .main-header h1 {
@@ -218,6 +225,7 @@ body {
   font-family: Allura, sans-serif;
   margin-top: 45px;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .left {
@@ -305,31 +313,34 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.popup-form legend {
+  text-align: center;
+  font-size: 3em;
+  color: #00a;
+  font-weight: bold;
+  font-family: Allura, sans-serif;
+  text-shadow: 3px 3px white;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
 #popup1 {
-  padding-top: 200px;
+  padding-top: 30px;
 }
 
 #popup2 {
-  padding-top: 850px;
+  padding-top: 125px;
 }
-
-.popup legend {
-  text-align: center;
-  font-size: 3em;
-  color: white;
-  padding: 20px;
-  font-weight: bold;
-  font-family: Allura, sans-serif;
-  text-shadow: 3px 3px #00a;
-}
-
 
 .recipe {
-  height: 800px;
+  height: 870px;
 }
 
 .contact {
-  height: 500px;
+  height: 550px;
 }
 
 .contact input[type="submit"] {
@@ -337,11 +348,14 @@ body {
 }
 
 .popup-form {
-  width: 50%;
+  width: 100%;
   margin: auto;
   border: 5px #182 solid;
   position: relative;
   background-color: lightgray;
+  position: fixed;
+  z-index: 4;
+  padding-top: 65px;
 }
 
 .popup .recipe-text {
@@ -351,7 +365,6 @@ body {
 .popup label {
   display: block;
   margin-top: 15px;
-  margin-left: 5%;
   margin-bottom: 42px;
   font-weight: 600;
   font-size: 1.25em;
@@ -369,24 +382,22 @@ body {
   height: 200px;
 }
 
-@media (max-width: 1700px) {
-  .popup {
-    width: 70%;
+@media (min-width: 850px){
+  .popup-form {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
-@media (max-width: 1250px) {
-  .popup {
-    width: 100%;
+@media (min-width: 1300px){
+  .popup-form {
+    width: 50%;
+    margin-left: 25%;
   }
 }
 
-@media (max-width: 900px) {
-  .popup {
-    width: 100%;
-  }
-  .popup textarea {
-    left: 30%;
-    width: 60%;
+@media (min-width: 1550px){
+  .popup-form label {
+    margin-left: 5%;
   }
 }
