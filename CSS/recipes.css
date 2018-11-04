@@ -348,6 +348,8 @@ body {
   position: fixed;
   z-index: 4;
   padding-top: 65px;
+  overflow: auto;
+  padding-top: 10px;
 }
 
 .popup .recipe-text {
