@@ -35,8 +35,9 @@ document.onkeydown = function(evt) {
     }
 };
 
-// Clear Popup Forms with Click Outside Forms??
+// Clear Popup Forms with Click Outside Forms
 
+//Submit Recipe Form
 document.addEventListener('click', function(evt) {
   const clickTarget = evt.target;
   if (clickTarget == popupForm[0]) {}
@@ -44,6 +45,7 @@ document.addEventListener('click', function(evt) {
   else {popup[0].style.visibility = "hidden";}
 })
 
+//Contact Me Form
 document.addEventListener('click', function(evt) {
   const clickTarget = evt.target;
   if (clickTarget == popupForm[1]) {}

@@ -315,7 +315,7 @@ body {
 
 .popup-form legend {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   color: #00a;
   font-weight: bold;
   font-family: Allura, sans-serif;
@@ -325,14 +325,6 @@ body {
   top: 10px;
   left: 0;
   right: 0;
-}
-
-#popup1 {
-  padding-top: 30px;
-}
-
-#popup2 {
-  padding-top: 125px;
 }
 
 .recipe {
@@ -367,15 +359,14 @@ body {
   margin-top: 15px;
   margin-bottom: 42px;
   font-weight: 600;
-  font-size: 1.25em;
   overflow: auto;
   font-family: arial, sans-serif;
 }
 
 .popup-form textarea {
   position: absolute;
-  left: 20%;
-  width: 65%;
+  left: 35%;
+  width: 55%;
 }
 
 .text-input {
@@ -386,6 +377,27 @@ body {
   .popup-form {
     width: 80%;
     margin-left: 10%;
+  }
+
+  #popup1 {
+    padding-top: 30px;
+  }
+
+  #popup2 {
+    padding-top: 125px;
+  }
+
+  .popup-form textarea {
+    left: 20%;
+    width: 65%; 
+  }
+
+  .popup-form legend {
+    font-size: 3em;
+  }
+
+  .popup label {
+    font-size: 1.25em;
   }
 }
 
