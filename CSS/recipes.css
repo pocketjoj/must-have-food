@@ -302,7 +302,7 @@ body {
 
 /*------------Pop-up Form Styles-------------*/
 .popup {
-  visibility: hidden;
+  visibility: collapse;
   width: 100%;
   height: 100%;
   position: absolute;

@@ -19,19 +19,19 @@ submitInfo[1].addEventListener('click', function(){
 
 //Handles each form when its "Submit" button is clicked.
 recipeSubmit.addEventListener('click', function(){
-  popup[0].style.visibility = "hidden";
+  popup[0].style.visibility = "collapse";
 });
 
 recipeSubmit.addEventListener('click', function(){
-  popup[1].style.visibility = "hidden";
+  popup[1].style.visibility = "collapse";
 });
 
 //Clear Popup Forms with Escape
 document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.keyCode == 27) {
-      popup[0].style.visibility = "hidden";
-      popup[1].style.visibility = "hidden";
+      popup[0].style.visibility = "collapse";
+      popup[1].style.visibility = "collapse";
     }
 };
 
@@ -42,7 +42,7 @@ document.addEventListener('click', function(evt) {
   const clickTarget = evt.target;
   if (clickTarget == popupForm[0]) {}
   else if (clickTarget == submitInfo[0]) {}
-  else {popup[0].style.visibility = "hidden";}
+  else {popup[0].style.visibility = "collapse";}
 })
 
 //Contact Me Form
