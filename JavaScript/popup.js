@@ -37,18 +37,18 @@ document.onkeydown = function(evt) {
 
 // Clear Popup Forms with Click Outside Forms
 
-//Submit Recipe Form
-document.addEventListener('click', function(evt) {
-  const clickTarget = evt.target;
-  if (clickTarget == popupForm[0]) {}
-  else if (clickTarget == submitInfo[0]) {}
-  else {popup[0].style.visibility = "collapse";}
-})
-
-//Contact Me Form
-document.addEventListener('click', function(evt) {
-  const clickTarget = evt.target;
-  if (clickTarget == popupForm[1]) {}
-  else if (clickTarget == submitInfo[1]) {}
-  else {popup[1].style.visibility = "hidden";}
-})
+// //Submit Recipe Form
+// document.addEventListener('click', function(evt) {
+//   const clickTarget = evt.target;
+//   if (clickTarget == popupForm[0]) {}
+//   else if (clickTarget == submitInfo[0]) {}
+//   else {popup[0].style.visibility = "collapse";}
+// })
+//
+// //Contact Me Form
+// document.addEventListener('click', function(evt) {
+//   const clickTarget = evt.target;
+//   if (clickTarget == popupForm[1]) {}
+//   else if (clickTarget == submitInfo[1]) {}
+//   else {popup[1].style.visibility = "hidden";}
+// })
