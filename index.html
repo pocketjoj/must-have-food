@@ -96,21 +96,29 @@
     <div class="popup" id="popup1">
       <form>
         <fieldset class="popup-form recipe">
-          <legend>Submit Your Recipe</legend>
-          <button class="x-button button-style">X</button>
-          <label for="title"> Title:
-            <textarea name="title" type="text" id="title"></textarea>
-          </label>
-          <label for="Ingredients" class="recipe-text"> Ingredients:
-            <textarea name="ingredients" type="text" id="ingredients" class="text-input"></textarea>
-          </label>
-          <label for="directions" class="recipe-text"> Directions:
-            <textarea name="directions" type="text" id="directions" class="text-input"></textarea>
-          </label>
-          <label for="comments" class="recipe-text"> Comments:
-            <textarea name="comments" type="text" id="comments" class="text-input"></textarea>
-          </label>
-          <input type="submit" value="Submit Recipe" class="button-style" id="recipe-submit">
+          <div class="form-top flex">
+            <legend>Submit Your Recipe</legend>
+            <button class="x-button button-style">X</button>
+          </div>
+          <div class="form-bottom flex">
+            <div class="flex-item">
+              <label for="title"> Title:</label>
+              <textarea name="title" type="text" id="title"></textarea>
+            </div>
+            <div class="flex-item">
+              <label for="Ingredients" class="recipe-text"> Ingredients:</label>
+              <textarea name="ingredients" type="text" id="ingredients" class="text-input"></textarea>
+            </div>
+            <div class="flex-item">
+              <label for="directions" class="recipe-text"> Directions:</label>
+                <textarea name="directions" type="text" id="directions" class="text-input"></textarea>
+            </div>
+            <div class="flex-item">
+              <label for="comments" class="recipe-text"> Comments:</label>
+              <textarea name="comments" type="text" id="comments" class="text-input"></textarea>
+            </div>
+              <input type="submit" value="Submit Recipe" class="button-style" id="recipe-submit">
+          </div>
         </fieldset>
       </form>
     </div>
@@ -118,18 +126,25 @@
     <div class="popup" id="popup2">
       <form>
         <fieldset class="popup-form contact">
-          <legend>Contact Me</legend>
-          <button class="x-button button-style">X</button>
-          <label for="name"> Name:
-            <textarea name="name" type="text" id="name"></textarea>
-          </label>
-          <label for="Email"> Email:
-            <textarea name="email" type="email" id="email"></textarea>
-          </label>
-          <label for="message"> Message:
-            <textarea name="Message" type="text" id="comments" class="text-input"></textarea>
-          </label>
-          <input type="submit" value="Send Message" class="button-style" id="contact-submit">
+          <div class="form-top flex">
+            <legend>Contact Me</legend>
+            <button class="x-button button-style">X</button>
+          </div>
+          <div class="form-bottom flex">
+            <div class="flex-item">
+              <label for="name"> Name:</label>
+              <textarea name="name" type="text" id="name"></textarea>
+            </div>
+            <div class="flex-item">
+              <label for="Email"> Email:</label>
+              <textarea name="email" type="email" id="email"></textarea>
+            </div>
+            <div class="flex-item">
+              <label for="message"> Message:</label>
+              <textarea name="Message" type="text" id="comments" class="text-input"></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="button-style" id="contact-submit">
+          </div>
         </fieldset>
       </form>
     </div>
