@@ -322,7 +322,7 @@ body {
   background-color: lightgray;
   position: fixed;
   z-index: 5;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
 }
@@ -390,7 +390,7 @@ body {
 }
 
 .text-input {
-  height: 200px;
+  height: 100px;
 }
 
 @media (min-width: 650px){
@@ -416,13 +416,16 @@ body {
   .popup label {
     font-size: 1.25em;
   }
+
+  .text-input {
+    height: 200px;
+  }
 }
 
 @media (min-width: 1300px){
   .popup-form {
     width: 50%;
     margin-left: 25%;
-    overflow: auto;
   }
 }
 
