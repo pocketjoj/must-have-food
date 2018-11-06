@@ -220,7 +220,7 @@ body {
 }
 
 .col h3 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #f11;
   font-family: Allura, sans-serif;
   margin-top: 45px;
@@ -312,6 +312,7 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 40px;
 }
 
 .popup-form {
@@ -321,7 +322,7 @@ body {
   background-color: lightgray;
   position: fixed;
   z-index: 5;
-  overflow: auto;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -421,6 +422,7 @@ body {
   .popup-form {
     width: 50%;
     margin-left: 25%;
+    overflow: auto;
   }
 }
 
