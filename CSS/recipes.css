@@ -312,7 +312,6 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  padding-top: 40px;
 }
 
 .popup-form {
@@ -325,15 +324,7 @@ body {
   overflow: auto;
   display: flex;
   flex-direction: column;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-top {
-  height: 65px;
+  margin-top: 2%
 }
 
 .popup-form legend {
@@ -348,6 +339,11 @@ body {
   top: 10px;
   left: 0;
   right: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-item {
@@ -390,8 +386,36 @@ body {
 }
 
 .text-input {
-  height: 100px;
+  height: inherit;
 }
+
+/*---Particular Styles for "Submit a Recipe" and "Contact Me" Forms---*/
+
+.recipe {
+  height: 90%;
+}
+
+.recipe .form-top {
+  height: 8%;
+}
+
+.recipe .form-bottom {
+  height: 90%;
+}
+
+.text-input {
+  height: 26%;
+}
+
+.contact .form-top {
+  height: 65px;
+}
+
+#message {
+  height: 300px;
+}
+
+/*-------Media Queries for Modal Form Breakpoints--------*/
 
 @media (min-width: 650px){
   .flex-item label {
@@ -415,12 +439,6 @@ body {
 
   .popup label {
     font-size: 1.25em;
-  }
-}
-
-@media (min-width: 1000px){
-  .text-input {
-    height: 200px;
   }
 }
 
