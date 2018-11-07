@@ -430,11 +430,6 @@ body {
   .popup label {
     font-size: 1.25em;
   }
-
-  .x-button {
-    top: 0;
-    right: 0;
-  }
 }
 
 @media (min-width: 1300px){
