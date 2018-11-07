@@ -364,8 +364,8 @@ body {
   font-size: 1.25em;
   padding: 0 3px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   margin-top: 2px;
   margin-right: 2px;
   background-color: tomato;
@@ -429,6 +429,11 @@ body {
 
   .popup label {
     font-size: 1.25em;
+  }
+
+  .x-button {
+    top: 0;
+    right: 0;
   }
 }
 
