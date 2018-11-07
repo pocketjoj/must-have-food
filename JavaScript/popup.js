@@ -7,33 +7,38 @@ const popup = document.getElementsByClassName("popup");
 const popupForm = document.getElementsByClassName("popup-form");
 const body = document.getElementsByTagName("body");
 const html = document.getElementsByTagName("html")
+const content = document.getElementsByClassName("content")
 
 //Listeners for "Submit a Recipe" and "Contact Me" Buttons
 submitInfo[0].addEventListener('click', function(){
   if (popup[1].style.visibility != "visible") {
   popup[0].style.visibility = "visible";
-  body[0].style.overflow = "hidden";
-  html[0].style.overflow = "hidden";
+  // body[0].style.overflow = "hidden";
+  // html[0].style.overflow = "hidden";
+  content[0].style.overflow = "hidden";
 }});
 
 submitInfo[1].addEventListener('click', function(){
   if (popup[0].style.visibility != "visible") {
   popup[1].style.visibility = "visible";
-  body[0].style.overflow = "hidden";
-  html[0].style.overflow = "hidden";
+  // body[0].style.overflow = "hidden";
+  // html[0].style.overflow = "hidden";
+  content[0].style.overflow = "hidden";
 }});
 
 //Handles each form when its "Submit" button is clicked.
 recipeSubmit.addEventListener('click', function(){
   popup[0].style.visibility = "collapse";
-  body[0].style.overflow = "auto";
-  html[0].style.overflow = "auto";
+  // body[0].style.overflow = "auto";
+  // html[0].style.overflow = "auto";
+  content[0].style.overflow = "auto";
 });
 
 recipeSubmit.addEventListener('click', function(){
   popup[1].style.visibility = "collapse";
-  body[0].style.overflow = "auto";
-  html[0].style.overflow = "auto";
+  // body[0].style.overflow = "auto";
+  // html[0].style.overflow = "auto";
+  content[0].style.overflow = "auto";
 });
 
 //Clear Popup Forms with Escape
@@ -42,8 +47,9 @@ document.onkeydown = function(evt) {
     if (evt.keyCode == 27) {
       popup[0].style.visibility = "collapse";
       popup[1].style.visibility = "collapse";
-      body[0].style.overflow = "auto";
-      html[0].style.overflow = "auto";
+      // body[0].style.overflow = "auto";
+      // html[0].style.overflow = "auto";
+      content[0].style.overflow = "auto";
     }
 };
 
