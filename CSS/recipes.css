@@ -7,7 +7,6 @@
 html {
   position: relative;
   min-height: 100%;
-  height: 100%;
 }
 
 /*---------Style for Sticker Footer---------*/
@@ -15,8 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
-  height: 100%;
 }
 
 .content {
