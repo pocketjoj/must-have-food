@@ -502,3 +502,27 @@ body {
     font-size: 5em;
   }
 }
+
+/*-----Styles for About Me Content-----*/
+.background {
+  background-color: #ccc;
+  background-image: url("../Pictures/paper.jpg");
+}
+
+.about {
+  display: flex;
+  width: 80%;
+  margin: 30px auto 0;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: Calibri, sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  text-shadow:
+}
+
+.about img {
+  border-radius: 50%;
+  padding: 20px;
+  margin-right: 50px;
+}
