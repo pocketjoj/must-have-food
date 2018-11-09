@@ -1,13 +1,19 @@
-//Controls pop-up menu when "Submit a Recipe" or "Cotact Me" Buttons are clicked.
-
+//Constants for Modals and their buttons
 const submitInfo = document.getElementsByClassName("submit-info");
 const recipeSubmit = document.getElementById("recipe-submit");
 const contactMe = document.getElementById("contact-submit")
 const popup = document.getElementsByClassName("popup");
 const popupForm = document.getElementsByClassName("popup-form");
+
+//Constants for hiding scroll bar when modals pop up
 const body = document.getElementsByTagName("body");
 const html = document.getElementsByTagName("html")
 const content = document.getElementsByClassName("content")
+
+//Constants for Under Construction sign to pop up when Newsletter Button is clicked
+const newsletterButton = document.getElementsByClassName("newsletter");
+const construction = document.getElementById("construction-pop");
+
 
 //Listeners for "Submit a Recipe" and "Contact Me" Buttons
 submitInfo[0].addEventListener('click', function(){
@@ -41,32 +47,26 @@ recipeSubmit.addEventListener('click', function(){
   content[0].style.overflow = "auto";
 });
 
-//Clear Popup Forms with Escape
+//Under Construction sign for Newsletter Buttons
+construction.style.display = "none";
+
+newsletterButton[0].addEventListener('click', function(){
+  if (construction.style.display == "none"){
+      construction.style.display = "block"
+    } else {
+      construction.style.display = "none"
+    }
+});
+
+//Clear Popup Forms/Under Construction sign with Escape
 document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.keyCode == 27) {
       popup[0].style.visibility = "collapse";
       popup[1].style.visibility = "collapse";
+      construction.style.display = "none";
       body[0].style.overflow = "auto";
       html[0].style.overflow = "auto";
       content[0].style.overflow = "auto";
     }
 };
-
-// Clear Popup Forms with Click Outside Forms
-
-// //Submit Recipe Form
-// document.addEventListener('click', function(evt) {
-//   const clickTarget = evt.target;
-//   if (clickTarget == popupForm[0]) {}
-//   else if (clickTarget == submitInfo[0]) {}
-//   else {popup[0].style.visibility = "collapse";}
-// })
-//
-// //Contact Me Form
-// document.addEventListener('click', function(evt) {
-//   const clickTarget = evt.target;
-//   if (clickTarget == popupForm[1]) {}
-//   else if (clickTarget == submitInfo[1]) {}
-//   else {popup[1].style.visibility = "hidden";}
-// })
