@@ -219,13 +219,13 @@ body {
 
 .col {
   padding: 20px;
+  font-family: Calibri, sans-serif;
 }
 
 .col h2 {
   text-align: center;
   font-size: 1.75em;
   margin: 0 auto;
-  font-family: Calibri, sans-serif;
   color: #00a;
 }
 
@@ -239,9 +239,20 @@ body {
 }
 
 .left {
-  font-family: Calibri, sans-serif;
   font-size: 1.25em;
   background-color: #eee;
+}
+
+.middle {
+  font-weight: bold;
+  line-height: 1.75em;
+  font-size: 1.2em;
+}
+
+.middle p {
+  margin: 30px 50px;
+  text-indent: 40px;
+  color: #007;
 }
 
 .buttons {
@@ -272,6 +283,7 @@ body {
   .middle {
     flex-grow: 2;
     order: 1;
+    background-image: url("../Pictures/paper.jpg");
   }
 
   .right {
@@ -511,18 +523,40 @@ body {
 
 .about {
   display: flex;
-  width: 80%;
-  margin: 30px auto 0;
+  flex-direction: column;
+  width: 100%;
   font-size: 1.5em;
   line-height: 1.5em;
   font-family: Calibri, sans-serif;
   font-weight: 600;
   border-radius: 10px;
-  text-shadow:
+  padding: 30px;
 }
 
 .about img {
   border-radius: 50%;
-  padding: 20px;
-  margin-right: 50px;
+  max-width: 95%;
+  height: auto;
+  margin: auto;
+}
+
+@media (min-width: 800px){
+  .about {
+    flex-direction: row;
+  }
+
+  .about p {
+    padding-left: 30px;
+  }
+}
+
+  @media (min-width: 1200px){
+    .about {
+      width: 75%;
+      margin: auto;
+    }
+
+    .about p {
+      padding-left: 50px;
+    }
 }

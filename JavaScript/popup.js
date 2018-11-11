@@ -70,3 +70,10 @@ document.onkeydown = function(evt) {
       content[0].style.overflow = "auto";
     }
 };
+
+// Clear Under Construction Sign with click anywhere
+document.addEventListener('click', function(event){
+  if (event.target != newsletterButton[0]){
+    construction.style.display = "none"
+  }
+});
