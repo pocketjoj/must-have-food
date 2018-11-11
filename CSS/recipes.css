@@ -259,9 +259,10 @@ body {
   text-align: center;
 }
 
-.buttons a {
-  text-decoration: none;
-  color: inherit;
+.buttons img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: #007 solid 5px;
 }
 
 .side-img {
