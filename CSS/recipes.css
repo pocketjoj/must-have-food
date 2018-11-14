@@ -470,18 +470,6 @@ body {
   }
 }
 
-/*---------Style for Buttons on "Surprise" Page-----------*/
-
-#recipe-link,
-#recipe-refresh {
-  margin-top: 5%;
-  padding: 20px;
-  text-align: center;
-  width: 20%;
-  font-size: 2.5rem;
-  text-decoration: none;
-}
-
 /*--"Under Construction Signs" on database and meal planner pages--*/
 .construction {
   font-size: 2em;
@@ -499,6 +487,7 @@ body {
   display: none;
   position: fixed;
   z-index: 3;
+  margin-top: 20px;
 }
 
 @media (min-width: 860px){
