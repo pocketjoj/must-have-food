@@ -76,9 +76,3 @@ select {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-/*------Style for "Construction" Sign on just the Planner page-----*/
-
-  #construction-pop {
-    margin-top: 0;
-  }
