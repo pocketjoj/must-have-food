@@ -250,7 +250,7 @@ body {
 }
 
 .middle p {
-  margin: 30px 50px;
+  margin: 20px;
   text-indent: 40px;
   color: #007;
 }
@@ -284,6 +284,10 @@ body {
     flex-grow: 2;
     order: 1;
     background-image: url("../Pictures/paper.jpg");
+  }
+  
+  .middle p {
+    margin: 30px 50px;
   }
 
   .right {
