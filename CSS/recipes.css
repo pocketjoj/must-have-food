@@ -483,8 +483,8 @@ body {
   font-size: 2em;
   font-family: Calibri, sans-serif;
   text-align: center;
-  width: 50%;
-  margin: 7% 25%;
+  width: 80%;
+  margin: 7% 10%;
   background-color: #f4d742;
   border-radius: 10px;
   border: 15px dashed black;
@@ -500,6 +500,8 @@ body {
 @media (min-width: 860px){
   .construction {
     font-size: 3em;
+    width: 50%;
+    margin-left: 25%;
   }
 }
 
