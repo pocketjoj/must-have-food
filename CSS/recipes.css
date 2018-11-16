@@ -250,9 +250,8 @@ body {
 }
 
 .middle p {
-  margin: 30px 50px;
+  margin: 10px;
   text-indent: 40px;
-  color: #007;
 }
 
 .buttons {
@@ -285,6 +284,10 @@ body {
     flex-grow: 2;
     order: 1;
     background-image: url("../Pictures/paper.jpg");
+  }
+  
+  .middle p {
+    margin: 30px 50px;
   }
 
   .right {
@@ -467,25 +470,13 @@ body {
   }
 }
 
-/*---------Style for Buttons on "Surprise" Page-----------*/
-
-#recipe-link,
-#recipe-refresh {
-  margin-top: 5%;
-  padding: 20px;
-  text-align: center;
-  width: 20%;
-  font-size: 2.5rem;
-  text-decoration: none;
-}
-
 /*--"Under Construction Signs" on database and meal planner pages--*/
 .construction {
   font-size: 2em;
   font-family: Calibri, sans-serif;
   text-align: center;
-  width: 50%;
-  margin: 7% 25%;
+  width: 80%;
+  margin: 7% 10%;
   background-color: #f4d742;
   border-radius: 10px;
   border: 15px dashed black;
@@ -496,11 +487,18 @@ body {
   display: none;
   position: fixed;
   z-index: 3;
+  margin-top: 50px;
 }
 
 @media (min-width: 860px){
   .construction {
     font-size: 3em;
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+  #construction-pop {
+    margin: auto;
   }
 }
 
@@ -526,7 +524,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.5em;
   font-family: Calibri, sans-serif;
   font-weight: 600;
@@ -553,11 +551,15 @@ body {
 
   @media (min-width: 1200px){
     .about {
-      width: 75%;
+      width: 90%;
       margin: auto;
+    }
+    
+    .about img {
+      width: 40%;
     }
 
     .about p {
-      padding-left: 50px;
+      padding-left: 40px;
     }
 }
