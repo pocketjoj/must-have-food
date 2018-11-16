@@ -524,7 +524,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5em;
   font-family: Calibri, sans-serif;
   font-weight: 600;
@@ -555,11 +555,12 @@ body {
       margin: auto;
     }
 
-    .about img {
-      width: 45%;
-    }
+    /* .about img {
+      width: 40%;
+    } */
 
     .about p {
       padding-left: 40px;
+      width: 60%;
     }
 }
