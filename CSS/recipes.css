@@ -551,11 +551,15 @@ body {
 
   @media (min-width: 1200px){
     .about {
-      width: 75%;
+      width: 90%;
       margin: auto;
+    }
+    
+    .about img {
+      width: 40%;
     }
 
     .about p {
-      padding-left: 50px;
+      padding-left: 40px;
     }
 }
